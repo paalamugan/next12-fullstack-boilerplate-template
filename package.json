@@ -84,6 +84,7 @@
     "commitlint",
     "commitizen",
     "husky",
-    "lint-staged"
+    "lint-staged",
+    "storybook"
   ]
 }
