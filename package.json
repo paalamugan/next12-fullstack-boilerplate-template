@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=14.0.0",
     "yarn": ">=1.22.0",
-    "npm": "please-use-yarn"
+    "npm": "please-use-yarnasas"
   },
   "scripts": {
     "dev": "next dev",
