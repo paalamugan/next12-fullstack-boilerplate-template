@@ -1,10 +1,6 @@
-All code from this tutorial as a complete package is available in [this repository](https://github.com/alexeagleson/nextjs-fullstack-app-template).
+# Next12 Fullstack App Template
 
-If you find this tutorial helpful, please share it with your friends and colleagues! For more like it you can subscribe on [Youtube](https://www.youtube.com/channel/UCV5YqK3AaInd3lYFQqlp7Lw) or follow me on [Twitter](https://twitter.com/eagleson_alex).
-
-This tutorial is available as a video lesson if you prefer that format:
-
-{% youtube Iu5aZDqZt8E %}
+This is a template for creating a production-ready fullstack Next.js application. It is based on the [Next.js](https://nextjs.org/) framework and [Typescript](https://www.typescriptlang.org/). It is intended to be a starting point for a new project, but also a tutorial for how to set up a project with a lot of best practices and tools that will help you scale your project as it grows.
 
 ## Table of Contents
 
