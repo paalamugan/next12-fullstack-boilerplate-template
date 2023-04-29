@@ -46,9 +46,9 @@ Now, with all that said, if you are ready, let's dive right in!
 We'll begin by creating a default Next.js application with a Typescript template.
 
 ```bash
-npx create-next-app --ts nextjs-fullstack-app-template
+npx create-next-app --ts next12-fullstack-boilerplate-template
 
-cd nextjs-fullstack-app-template
+cd next12-fullstack-boilerplate-template
 ```
 
 First we will test to make sure the app is working. We're going to be using `yarn` for this example, but you could just as easily use NPM if you choose.
@@ -103,11 +103,10 @@ Note that the use of `engine-strict` didn't specifically say anything about `yar
 `package.json`
 
 ```json
-  "name": "nextjs-fullstack-app-template",
+  "name": "next12-fullstack-boilerplate-template",
   "author": "YOUR_NAME",
   "description": "A tutorial and template for creating a production-ready fullstack Next.js application",
   "version": "0.1.0",
-  "private": true,
   "license" : "MIT"
   "homepage": "YOUR_GIT_REPO_URL"
   "engines": {
@@ -382,20 +381,17 @@ module.exports = {
       2,
       'always',
       [
-        'build',
-        'chore',
-        'ci',
-        'docs',
         'feat',
         'fix',
-        'perf',
-        'refactor',
-        'revert',
+        'docs',
         'style',
+        'refactor',
+        'perf',
         'test',
-        'translation',
-        'security',
-        'changeset',
+        'build',
+        'ci',
+        'chore',
+        'revert',
       ],
     ],
   },
@@ -436,12 +432,36 @@ Within `settings.json` we will add the following values:
 
 ```json
 {
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "search.exclude": {
+    "package-lock.json": true
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true
-  }
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
+  "jest.autoRun": {
+    "watch": true, // Start the jest with the watch flag
+    "onStartup": ["all-tests"] // Run all tests upon project launch
+  },
+  "jest.showCoverageOnLoad": true, // Show code coverage when the project is launched
+  "jest.showTerminalOnLaunch": false, // Don't automatically open test explorer terminal on launch
+  // Multiple language settings for json, javascript and jsonc files
+  "[json][jsonc]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "jest.jestCommandLine": "yarn test",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "npm.packageManager": "yarn"
 }
 ```
 
@@ -461,31 +481,51 @@ Inside of your `.vscode` directory create a `launch.json` file:
 
 ```json
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "configurations": [
     {
-      "name": "Next.js: debug server-side",
-      "type": "node-terminal",
+      "type": "chrome",
       "request": "launch",
-      "command": "npm run dev"
+      "name": "Next.js(Chrome): Debug client-side",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
     },
     {
-      "name": "Next.js: debug client-side",
-      "type": "pwa-chrome",
+      "type": "node",
       "request": "launch",
-      "url": "http://localhost:3000"
+      "name": "Next.js(Node): Debug server-side",
+      "program": "${workspaceFolder}/node_modules/.bin/next",
+      "args": ["dev"],
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal"
     },
     {
-      "name": "Next.js: debug full stack",
-      "type": "node-terminal",
+      "type": "node",
+      "name": "vscode-jest-tests.v2",
       "request": "launch",
-      "command": "npm run dev",
       "console": "integratedTerminal",
-      "serverReadyAction": {
-        "pattern": "started server on .+, url: (https?://.+)",
-        "uriFormat": "%s",
-        "action": "debugWithChrome"
-      }
+      "internalConsoleOptions": "neverOpen",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "test",
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next: Full",
+      "configurations": [
+        "Next.js(Node): Debug server-side",
+        "Next.js(Chrome): Debug client-side"
+      ]
     }
   ]
 }
@@ -528,9 +568,10 @@ This section is now going to cover setting up the folder structure in our projec
 I personally like to take a fairly simplistic approach, keep things separated basically in a class model/view style. We will be using three primary folders:
 
 ```
-/components
-/lib
-/pages
+/src
+  /components
+  /lib
+  /pages
 ```
 
 - `component` - The individual UI components that make up the app will live in here
