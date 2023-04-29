@@ -42,7 +42,7 @@
   ],
   "compounds": [
     {
-      "name": "Next: Full",
+      "name": "Next(Full): Debug Both client and server",
       "configurations": [
         "Next.js(Node): Debug server-side",
         "Next.js(Chrome): Debug client-side"
