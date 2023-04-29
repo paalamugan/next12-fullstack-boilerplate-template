@@ -11,11 +11,12 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky installs",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "check-types": "tsc --noEmit --pretty",
-    "commit": "cz"
+    "commit": "git-cz",
+    "cz": "git-cz"
   },
   "dependencies": {
     "next": "^12.3.4",
@@ -63,7 +64,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "cz-conventional-changelog"
     }
   },
   "packageManager": "yarn@1.22.19",
