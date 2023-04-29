@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
-import { AuthProvider } from '../state/auth/AuthContext';
-import { NextPageWithLayout } from '../typings/page';
+import { AuthProvider } from '~/state/auth/AuthContext';
+import { NextPageWithLayout } from '~/typings/page';
 import './globals.css';
 
 interface AppPropsWithLayout extends AppProps {

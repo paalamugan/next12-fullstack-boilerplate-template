@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import AuthContext from '../../../state/auth/AuthContext';
+import AuthContext from '~/state/auth/AuthContext';
 import styles from './AuthButton.module.css';
 
 export interface IAuthButton extends React.ComponentPropsWithoutRef<'button'> {}

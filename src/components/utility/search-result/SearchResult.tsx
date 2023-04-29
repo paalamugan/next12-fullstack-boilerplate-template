@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ISearchData } from '../../../lib/search/types';
+import { ISearchData } from '~/lib/search/types';
 
 export type ISearchResult = ISearchData & React.ComponentPropsWithoutRef<'div'>;
 

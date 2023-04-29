@@ -3,14 +3,8 @@
   "author": "YOUR_NAME_HERE",
   "description": "A production-ready boilerplate template for Next.js fullstack development application",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "homepage": "YOUR_REPOSITORY_HERE",
-  "engines": {
-    "node": ">=14.0.0",
-    "yarn": ">=1.22.0",
-    "npm": "please-use-yarn"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,7 +14,8 @@
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "commit": "yarn cz"
+    "check-types": "tsc --noEmit --pretty",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "^12.3.4",
@@ -53,6 +48,7 @@
     "eslint-plugin-storybook": "^0.5.7",
     "git-cz": "^4.9.0",
     "husky": "^7.0.4",
+    "lint-staged": "^13.2.2",
     "next-auth": "^4.3.1",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
@@ -69,5 +65,25 @@
     "commitizen": {
       "path": "git-cz"
     }
-  }
+  },
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
+  "keywords": [
+    "nextjs",
+    "next12",
+    "nextjs12-boilerplate",
+    "typescript",
+    "tailwindcss",
+    "react",
+    "eslint",
+    "prettier",
+    "commitlint",
+    "commitizen",
+    "husky",
+    "lint-staged"
+  ]
 }
