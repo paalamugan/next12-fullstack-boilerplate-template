@@ -19,7 +19,8 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "commit": "yarn cz"
   },
   "dependencies": {
     "next": "^12.3.4",

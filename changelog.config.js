@@ -2,16 +2,17 @@ module.exports = {
   disableEmoji: false,
   format: '{type}{scope}: {emoji}{subject}',
   list: [
-    'test',
     'feat',
     'fix',
-    'chore',
     'docs',
-    'refactor',
     'style',
-    'ci',
+    'refactor',
     'perf',
+    'test',
     'build',
+    'ci',
+    'release',
+    'chore',
     'revert',
   ],
   maxMessageLength: 64,
@@ -27,21 +28,6 @@ module.exports = {
   ],
   scopes: [],
   types: {
-    chore: {
-      description: 'Build process or auxiliary tool changes',
-      emoji: '🤖',
-      value: 'chore',
-    },
-    ci: {
-      description: 'CI related changes',
-      emoji: '🎡',
-      value: 'ci',
-    },
-    docs: {
-      description: 'Documentation only changes',
-      emoji: '✏️',
-      value: 'docs',
-    },
     feat: {
       description: 'A new feature',
       emoji: '🎸',
@@ -52,36 +38,53 @@ module.exports = {
       emoji: '🐛',
       value: 'fix',
     },
+    docs: {
+      description: 'Documentation only changes',
+      emoji: '✏️',
+      value: 'docs',
+    },
+    style: {
+      description:
+        'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+      emoji: '💄',
+      value: 'style',
+    },
+    refactor: {
+      description: 'A code change that neither fixes a bug nor adds a feature',
+      emoji: '💡',
+      value: 'refactor',
+    },
     perf: {
       description: 'A code change that improves performance',
       emoji: '⚡️',
       value: 'perf',
     },
-    refactor: {
-      description: 'A code change that neither fixes a bug or adds a feature',
-      emoji: '💡',
-      value: 'refactor',
+    test: {
+      description: 'Adding missing tests or correcting existing tests',
+      emoji: '💍',
+      value: 'test',
+    },
+    build: {
+      description:
+        'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
+      emoji: '🌴',
+      value: 'build',
+    },
+    ci: {
+      description:
+        'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
+      emoji: '🎡',
+      value: 'ci',
     },
     release: {
       description: 'Create a release commit',
       emoji: '🏹',
       value: 'release',
     },
-    style: {
-      description: 'Markup, white-space, formatting, missing semi-colons...',
-      emoji: '💄',
-      value: 'style',
-    },
-    test: {
-      description: 'Adding missing tests',
-      emoji: '💍',
-      value: 'test',
-    },
-    build: {
-      description:
-        'Changes that affect the build system or external dependencies',
-      emoji: '🌴',
-      value: 'build',
+    chore: {
+      description: "Other changes that don't modify src or test files",
+      emoji: '🤖',
+      value: 'chore',
     },
     revert: {
       description: 'Reverts a previous commit',
@@ -90,9 +93,11 @@ module.exports = {
     },
     messages: {
       type: "Select the type of change that you're committing:",
-      customScope: 'Select the scope this component affects:',
-      subject: 'Write a short, imperative mood description of the change:\n',
-      body: 'Provide a longer description of the change:\n ',
+      customScope:
+        'What is the scope of this change (e.g. component or file name): (press enter to skip)',
+      subject:
+        ' Write a short, imperative tense description of the change (max 94 chars):\n',
+      body: 'Provide a longer description of the change: (press enter to skip)\n ',
       breaking: 'List any breaking changes:\n',
       footer: 'Issues this commit closes, e.g #123:',
       confirmCommit: 'The packages that this commit has affected\n',
