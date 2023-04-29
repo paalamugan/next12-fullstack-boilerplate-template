@@ -1,0 +1,51 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.tabSize": 2,
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+  },
+  "cSpell.words": [
+    "codenames",
+    "colour",
+    "commitlint",
+    "datacentres",
+    "devs",
+    "Eagleson",
+    "esbenp",
+    "Etyo",
+    "Kasper",
+    "leerob",
+    "nextauth",
+    "nextjs",
+    "npmrc",
+    "pravatar",
+    "preload",
+    "prettierignore",
+    "prettierrc",
+    "regexes",
+    "rgba",
+    "scaleable",
+    "signin",
+    "Supabase",
+    "superpowered",
+    "tailwindcss",
+    "typeof",
+    "typesafe",
+    "unoptimized",
+    "userinfo",
+    "Vercel",
+    "Viewports",
+    "WEBP"
+  ]
+}
