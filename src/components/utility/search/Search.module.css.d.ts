@@ -1,4 +1,5 @@
 declare const styles: {
-  readonly component: string;
+  readonly "component": string;
 };
 export = styles;
+
