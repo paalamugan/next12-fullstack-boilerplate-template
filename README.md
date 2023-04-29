@@ -1,27 +1,27 @@
-# Next12 Fullstack App Template
+# Next12 Fullstack Boilerplate Template
 
 This is a template for creating a production-ready fullstack Next.js application. It is based on the [Next.js](https://nextjs.org/) framework and [Typescript](https://www.typescriptlang.org/). It is intended to be a starting point for a new project, but also a tutorial for how to set up a project with a lot of best practices and tools that will help you scale your project as it grows.
 
 ## Table of Contents
 
 1. [What is Next.js?](#what-is-nextjs)
-1. [Introduction](#introduction)
-1. [Project Setup](#project-setup)
-1. [Engine Locking](#engine-locking)
-1. [Git Setup](#git-setup)
-1. [Code Formatting and Quality Tools](#code-formatting-and-quality-tools)
-1. [Git Hooks](#git-hooks)
-1. [VS Code Configuration](#vs-code-configuration)
-1. [Debugging](#debugging)
-1. [Directory Structure](#directory-structure)
-1. [Adding Storybook](#adding-storybook)
-1. [Creating a Component Template](#creating-a-component-template)
-1. [Using the Component Template](#using-the-component-template)
-1. [Adding a Custom Document](#adding-a-custom-document)
-1. [Adding Layouts](#adding-layouts)
-1. [Deployment](#deployment)
-1. [Next Steps](#next-steps)
-1. [Wrapping Up](#wrapping-up)
+2. [Introduction](#introduction)
+3. [Project Setup](#project-setup)
+4. [Engine Locking](#engine-locking)
+5. [Git Setup](#git-setup)
+6. [Code Formatting and Quality Tools](#code-formatting-and-quality-tools)
+7. [Git Hooks](#git-hooks)
+8. [VS Code Configuration](#vs-code-configuration)
+9. [Debugging](#debugging)
+10. [Directory Structure](#directory-structure)
+11. [Adding Storybook](#adding-storybook)
+12. [Creating a Component Template](#creating-a-component-template)
+13. [Using the Component Template](#using-the-component-template)
+14. [Adding a Custom Document](#adding-a-custom-document)
+15. [Adding Layouts](#adding-layouts)
+16. [Deployment](#deployment)
+17. [Next Steps](#next-steps)
+18. [Wrapping Up](#wrapping-up)
 
 ## What is Next.js?
 
@@ -1163,7 +1163,7 @@ For more info on how to use a custom `_document` see the [documentation](https:/
 
 Layouts are an important concept in Next.js. They help you manage state between pages. For this section we will be using the same basic template as provided in the [official example](https://github.com/vercel/next.js/tree/canary/examples/layout-component) and simply customizing it to fit our project.
 
-Create a new directory called `layouts` in `components`. We will be copying our `templates/case` directory again two times. One to call`primary` and one called `sidebar`. It should look as follows when complete:
+Create a new directory called `layouts` in `components`. We will be copying our `templates/case` directory again two times. One to call `primary` and one called `sidebar`. It should look as follows when complete:
 
 ![Layout Folders](https://res.cloudinary.com/dqse2txyi/image/upload/v1649187194/blogs/nextjs-fullstack-app-template/layout-folders_g3hzyt.png)
 
@@ -1354,7 +1354,7 @@ const About: NextPageWithLayout = () => {
       <p>
         This example adds a property <code>getLayout</code> to your page,
         allowing you to return a React component for the layout. This allows you
-        to define the layout on a per-page basis. Since we&apos;re returning a
+        to define the layout on a per-page basis. Since we're returning a
         function, we can have complex nested layouts if desired.
       </p>
       <p>
@@ -1371,8 +1371,8 @@ const About: NextPageWithLayout = () => {
       <h3>Try It Out</h3>
       <p>
         To visualize this, try tying in the search input in the{' '}
-        <code>Sidebar</code> and then changing routes. You&apos;ll notice the
-        input state is persisted.
+        <code>Sidebar</code> and then changing routes. You'll notice the input
+        state is persisted.
       </p>
     </section>
   );
@@ -1497,31 +1497,17 @@ Remember that all code from this tutorial as a complete package is available in 
 Please check some of my other learning tutorials. Feel free to leave a comment or question and share with others if you find any of them helpful:
 
 - [How to Build Scalable Architecture for your Next.js Project](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7)
-
 - [How to Connect a React App to a Notion Database](https://dev.to/alexeagleson/how-to-connect-a-react-app-to-a-notion-database-51mc)
-
 - [How to use Node.js to backup your personal files](https://dev.to/alexeagleson/how-to-use-nodejs-to-backup-your-personal-files-and-learn-some-webdev-skills-along-the-way-541a)
-
 - [Introduction to Docker for Javascript Developers](https://dev.to/alexeagleson/docker-for-javascript-developers-41me)
-
 - [Learnings from React Conf 2021](https://dev.to/alexeagleson/learnings-from-react-conf-2021-17lg)
-
 - [How to Create a Dark Mode Component in React](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg)
-
-- [How to Analyze and Improve your 'Create React App' Production Build ](https://dev.to/alexeagleson/how-to-analyze-and-improve-your-create-react-app-production-build-4f34)
-
+- [How to Analyze and Improve your &#39;Create React App&#39; Production Build ](https://dev.to/alexeagleson/how-to-analyze-and-improve-your-create-react-app-production-build-4f34)
 - [How to Create and Publish a React Component Library](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe)
-
 - [How to use IndexedDB to Store Local Data for your Web App ](https://dev.to/alexeagleson/how-to-use-indexeddb-to-store-data-for-your-web-application-in-the-browser-1o90)
-
 - [Running a Local Web Server](https://dev.to/alexeagleson/understanding-the-modern-web-stack-running-a-local-web-server-4d8g)
-
 - [ESLint](https://dev.to/alexeagleson/understanding-the-modern-web-stack-linters-eslint-59pm)
-
 - [Prettier](https://dev.to/alexeagleson/understanding-the-modern-web-stack-prettier-214j)
-
 - [Babel](https://dev.to/alexeagleson/building-a-modern-web-stack-babel-3hfp)
-
-- [React & JSX](https://dev.to/alexeagleson/understanding-the-modern-web-stack-react-with-and-without-jsx-31c7)
-
+- [React &amp; JSX](https://dev.to/alexeagleson/understanding-the-modern-web-stack-react-with-and-without-jsx-31c7)
 - [Webpack: The Basics](https://dev.to/alexeagleson/understanding-the-modern-web-stack-webpack-part-1-2mn1)
