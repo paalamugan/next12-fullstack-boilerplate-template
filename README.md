@@ -416,7 +416,7 @@ I'm going to create a new commit now with the message `ci: implement commitlint`
 
 You can see the result of the complete culmination of this setup in the screenshot below, hopefully yours looks similar:
 
-![Dev Experience](https://res.cloudinary.com/dqse2txyi/image/upload/v1649129725/blogs/nextjs-fullstack-app-template/dev-experience_wznie9.png)
+![Dev Experience](https://res.cloudinary.com/dqse2txyi/image/upload/v1649129725/blogs//dev-experience_wznie9.png)
 
 ## VS Code Configuration
 
@@ -1210,7 +1210,7 @@ Create a new directory called `layouts` in `components`. We will be copying our 
 
 Do a case-sensitive find/replace for `BaseTemplate` inside each of the files as well to replace with `PrimaryLayout` and `SidebarLayout` respectively.
 
-If you have any difficulty with this step, feel free to just [take the structure from the repo](https://github.com/alexeagleson/nextjs-fullstack-app-template).
+If you have any difficulty with this step, feel free to just [take the structure from the repo](https://github.com/paalamugan/next12-fullstack-boilerplate-template).
 
 _All credit to \_leerob_ and _JJ Kasper_ from Vercel for the structure of these layout templates\_
 
@@ -1533,7 +1533,7 @@ Stay tuned and please don't hesitate to ask any questions, I'm happy to answer i
 
 ## Wrapping Up
 
-Remember that all code from this tutorial as a complete package is available in [this repository](https://github.com/alexeagleson/nextjs-fullstack-app-template).
+Remember that all code from this tutorial as a complete package is available in [this repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template).
 
 Please check some of my other learning tutorials. Feel free to leave a comment or question and share with others if you find any of them helpful:
 

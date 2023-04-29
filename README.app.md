@@ -23,7 +23,7 @@
 
 **IMPORTANT: This tutorial is a continuation of a [previous tutorial](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7#adding-storybook).**
 
-If you wish to align the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) with the start of this tutorial, clone the repository and `git checkout 6630ca95c25e66d7b6c7b1aad92151b481c1b9c5`.
+If you wish to align the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) with the start of this tutorial, clone the repository and `git checkout 6630ca95c25e66d7b6c7b1aad92151b481c1b9c5`.
 
 After you check out that commit, create a new branch to follow along with this tutorial. An example would be something like `git branch fullstack-tutorial` and then `git checkout fullstack-tutorial`.
 
@@ -37,7 +37,7 @@ npx create-next-app --ts
 
 Then you will also want to install Storybook. [Follow these instructions](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7#adding-storybook) in a new project to get aligned with the beginning of this tutorial.
 
-We also create all of our components off a base template that includes styles, stories and mock data. You can get that template from [here](https://github.com/alexeagleson/nextjs-fullstack-app-template/tree/main/components/templates/base).
+We also create all of our components off a base template that includes styles, stories and mock data. You can get that template from [here](https://github.com/paalamugan/next12-fullstack-boilerplate-template/tree/main/components/templates/base).
 
 Good luck, and I hope you enjoy this tutorial.
 
@@ -236,7 +236,7 @@ I've just added our blue/cyan gradient to the `BaseTemplate.tsx` component to te
 
 Time to commit our progress with `git commit -m 'feat: implement tailwind css'`
 
-If you want to align with this step of the tutorial, clone the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) and use `git checkout 6630ca95c25e66d7b6c7b1aad92151b481c1b9c5`.
+If you want to align with this step of the tutorial, clone the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) and use `git checkout 6630ca95c25e66d7b6c7b1aad92151b481c1b9c5`.
 
 ## Scoping and Requirements
 
@@ -329,7 +329,7 @@ For this reason I actually have the flexibility to start working on whichever co
 
 Create a new directory called `/utility` inside `/components`. As before, we'll start by copying our `templates/base` into the `components/utility` directory to start our component.
 
-If you are unsure what I am describing, you can refer back to the [original tutorial](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7#creating-a-component-template) where we created the [BaseTemplate](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7#creating-a-component-template) component, or simply take it from the project [repo](https://github.com/alexeagleson/nextjs-fullstack-app-template).
+If you are unsure what I am describing, you can refer back to the [original tutorial](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7#creating-a-component-template) where we created the [BaseTemplate](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7#creating-a-component-template) component, or simply take it from the project [repo](https://github.com/paalamugan/next12-fullstack-boilerplate-template).
 
 Run a find and replace for each instance of `BaseTemplate` and replace with `Search` in the copied folder, including both the content of the files and the filenames themselves. Lastly change the `title` in `Search.stories.tsx` to `utility/Search`. When you are done it should look like this:
 
@@ -532,7 +532,7 @@ This completes our `Search` component for now until we know more about what we w
 
 Time to commit our progress with `git commit -m 'feat: create Search component'`
 
-If you want to align with this step of the tutorial, clone the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) and use `git checkout 676a71b50755d859f46a12e54f8ea3484bf1f208`.
+If you want to align with this step of the tutorial, clone the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) and use `git checkout 676a71b50755d859f46a12e54f8ea3484bf1f208`.
 
 ### Front End: Header and Footer
 
@@ -790,7 +790,7 @@ And there it is. Remember that the layout (Header and Footer) are applied by Nex
 
 Things are in a good state so time to commit our progress with `git commit -m 'feat: build home page'`
 
-If you want to align with this step of the tutorial, clone the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) and use `git checkout 9ff325aceb0e2096fa618d78489beec2c00dea12`.
+If you want to align with this step of the tutorial, clone the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) and use `git checkout 9ff325aceb0e2096fa618d78489beec2c00dea12`.
 
 ## Front End: Results
 
@@ -936,7 +936,7 @@ There's a couple of things I'm going to be excluding from the clone for simplici
 
 You could easily create a modified version of that component and place it as a child element into this page and the header, but in terms of this tutorial we wouldn't really touch on any new Next.js-specific topics by doing that (and that's what this tutorial is focused on), so to keep things moving forward I'll leave that as an optional challenge for you if you choose.
 
-If you want to align with this step of the tutorial, clone the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) and use `git checkout 3c4cf387cfd9112fe26c5dd268c293d7c1c00f5f`.
+If you want to align with this step of the tutorial, clone the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) and use `git checkout 3c4cf387cfd9112fe26c5dd268c293d7c1c00f5f`.
 
 ## Back End Planning
 
@@ -1255,7 +1255,7 @@ Notice the query param I added to the URL? It works! Try changing it yourself to
 
 Time to commit our progress with `git commit -m 'feat: implement search API and results page query'`
 
-If you want to align with this step of the tutorial, clone the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) and use `git checkout f7321a266c51528d2369bf5d5862bc4ace4fdfcb`.
+If you want to align with this step of the tutorial, clone the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) and use `git checkout f7321a266c51528d2369bf5d5862bc4ace4fdfcb`.
 
 ## Front End Finishing Touches
 
@@ -1330,7 +1330,7 @@ Couple small features to keep in mind, you can return to home and search again b
 
 Time to commit our progress with `git commit -m 'feat: connect search input to results page'`
 
-If you want to align with this step of the tutorial, clone the [repository](https://github.com/alexeagleson/nextjs-fullstack-app-template) and use `git checkout `.
+If you want to align with this step of the tutorial, clone the [repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template) and use `git checkout `.
 
 ## Themes and Design Systems
 
@@ -1653,7 +1653,7 @@ Stay tuned and please don't hesitate to ask any questions, I'm happy to answer i
 
 ## Wrapping Up
 
-Remember that all code from this tutorial as a complete package is available in [this repository](https://github.com/alexeagleson/nextjs-fullstack-app-template).
+Remember that all code from this tutorial as a complete package is available in [this repository](https://github.com/paalamugan/next12-fullstack-boilerplate-template).
 
 Please check some of my other learning tutorials. Feel free to leave a comment or question and share with others if you find any of them helpful:
 
